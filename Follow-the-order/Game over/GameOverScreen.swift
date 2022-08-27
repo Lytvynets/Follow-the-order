@@ -13,7 +13,12 @@ class GameOverScene: SKScene {
     var notificationLabel = SKLabelNode(text: "")
     var tapToStartLabel = SKLabelNode(text: "Tap to Start")
     
+    override func didMove(to view: SKView) {
+        scene?.size = UIScreen.main.bounds.size
+    }
+    
     override init(size: CGSize) {
+        
         super.init(size: size)
         self.backgroundColor = #colorLiteral(red: 0.6731699386, green: 0.6444032243, blue: 0.4329370402, alpha: 1)
         addChild(notificationLabel)
