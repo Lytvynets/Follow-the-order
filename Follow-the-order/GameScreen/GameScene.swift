@@ -320,7 +320,7 @@ class GameScene: SKScene {
     // Creating an object
     func createObject() -> SKSpriteNode {
         let object = SKSpriteNode(imageNamed: "angry-birds-png-29")
-        object.size.height = UIScreen.main.bounds.height / 10
+        object.size.height = UIScreen.main.bounds.width / 5
         object.size.width = UIScreen.main.bounds.width / 5
         let randomX = CGFloat(GKRandomSource.sharedRandom().nextInt(upperBound: 300) - 150)
         let randomY = CGFloat(GKRandomSource.sharedRandom().nextInt(upperBound: 500) - 250)
